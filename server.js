@@ -4,8 +4,8 @@ const cors = require("cors");
 const helmet = require("helmet");
 const morgan = require("morgan");
 
-const authRoutes = require("./routes/auth");
-const scanRoutes = require("./routes/scan");
+const authRoutes = require("./backend/routes/auth");
+const scanRoutes = require("./backend/routes/scan");
 
 const app = express();
 const PORT = process.env.PORT || 4000;
